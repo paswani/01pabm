@@ -1,0 +1,667 @@
+extends layout
+
+block content
+    section(class="featured")
+      div(class="content-wrapper")
+          hgroup(class="title")
+              h1=title
+              h2 <center> Welcome to the SWG Bluemix Dashboard for PLM research. </center>
+          p
+            | To get more details on the bluemix dashboard, visit
+            a(href="https://releaseblueprints.ibm.com/display/CLOUDOE/Bluemix+Dashboard", title="node.js Website", target="_blank") Release Blueprints Bluemix Dashboard. 
+    
+            | This page features 
+            span(class="highlight") interactive graphs, conversion rates, market research and benchmarked metrics
+            | to aid a decision making framework. 
+
+            // If you have any questions about the dashboard, please feel free to contact us.
+             a(href="https://www.windowsazure.com/en-us/develop/nodejs/", title="node.js on Windows Azure", target="_blank") our dev center 
+      
+
+    section(class="main-content")
+      h3    This dashboard is using data from:
+      ol(class="round")
+          li(class="one")
+              h5 Bluemix Cloud Foundry Admin UI
+              p 
+                | The Cloud Foundry Admin UI is Cloud Foundry data from a development perspective. 
+                a(href="https://admin.ng.bluemix.net/", target="_blank") CF Admin UI
+          li(class="two")
+              h5 Coremetrics
+              p 
+                | Coremetrics is our Web analytics and market campaign tracking tool which tracks site visits.  
+                a(href="https://welcome.coremetrics.com/analyticswebapp/jsp/login.jsp", target="_blank") Coremetrics
+          li(class="three")
+              h5 x2020
+              p 
+                | This is a json application by the monitoring and metering team that tracks web traffic/HTTP requests.
+                a(href="https://traffic2020.ng.bluemix.net/x2020", target="_blank") x2020
+              br
+              p
+              p
+              p
+              p
+              p
+              p
+              p
+                       
+                 h3   Image Option:
+           
+                 h5  Total Unique Users
+            ol(class="round")
+          li(class="totalUniqueUsers")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 New Unique Users
+            ol(class="round")
+          li(class= "newUniqueUsers")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 Total Apps
+            ol(class="round")
+          li(class= "totalApps")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 New Apps
+            ol(class="round")
+          li(class= "newApps")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 Number of Instances
+            ol(class="round")
+          li(class= "numInst")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 Services Attached
+            ol(class="round")
+          li(class= "svcBar")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 
+            ol(class="round")
+          li(class= "svcPie")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 p Note: The data source we are using is the master source/authority. Confirmed with various services brands. Exclusion: JazzHub Dev Ops - See DevOps graphs below!
+                 h5 Instances by Buildpack
+            ol(class="round")
+          li(class= "instBp")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 Services per Instance
+            ol(class="round")
+          li(class= "svcPerInst")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 Jazzhub DevOps
+            ol(class="round")
+          li(class= "devOpsStats")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 
+            ol(class="round")
+          li(class= "devOpsProj")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h3 Usage/Utilization
+                 h5 Web Traffic: HTTP requests against all Bluemix 
+            ol(class="round")
+          li(class= "httpAll")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 Web Traffic: HTTP requests against Bluemix UI
+            ol(class="round")
+          li(class= "httpBm")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h3 Numbers by Day:
+                 h5 Total Unique Users
+            ol(class="round")
+          li(class= "statTotalUniqueUsers")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 New Unique Users
+            ol(class="round")
+          li(class= "statNewiqueUsers")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 New Apps
+            ol(class="round")
+          li(class= "statApps")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 Number of Instances
+            ol(class="round")
+          li(class= "statInst")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 h5 Services Attached
+            ol(class="round")
+          li(class= "statSvcs")
+              p 
+              p
+                 p
+                 p
+                 p
+                 p
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+                 br
+             h3 Tableau Option:
+                             
+                 <script type='text/javascript' src='http://public.tableausoftware.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 1004px; height: 870px;'><noscript><a href='#'><img alt=' ' src='http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;Da&#47;Dashboard_108&#47;D17&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='1004' height='870' style='display:none;'><param name='host_url' value='http%3A%2F%2Fpublic.tableausoftware.com%2F' /> <param name='site_root' value='' /><param name='name' value='Dashboard_108&#47;D17' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;Da&#47;Dashboard_108&#47;D17&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='showVizHome' value='no' /></object></div><div style='width:1004px;height:22px;padding:25px 10px 25px 25px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;'><div style='float:right; padding-right:8px;'></a></div></div>
+
+
+                 //<iframe src="https://releaseblueprints.ibm.com/display/CLOUDOE/Bluemix+Dashboard" width="500" height="500"></iframe>
+
+
